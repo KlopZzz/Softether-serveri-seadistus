@@ -1,4 +1,5 @@
 ## Softether Serveri Seadistamine Arch
+Antud õpetuses käsitleme Softether VPN serveri laadimist, käivitamist ning seadistamist. Õpetus on mõeldud Arch distrodele.
 ### Käivitusfailide laadimine
 1. Uuendame süsteemi
 ```bash
