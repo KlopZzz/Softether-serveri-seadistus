@@ -121,3 +121,38 @@ check
 Antud käsk kontrollib, kas süsteem on võimaline haldama Softetheri VPN serverit ja klient aplikatsiooni.
 
 Kui kõik kontroll punktid on läbitud, võime jätkata.
+
+### Administraatori parooli vahetamine
+Avame uuesti seadistamiseks Softetheri käsurea
+```bash
+./vpncmd
+```
+Vali nr. 1 "Management of VPN Server or VPN Bridge", vajuta ENTER, et ühendada localhost serveriga ning vajuta veel ENTER, et suunduda administraatori seadidistus keskkonda.
+
+Järgnevalt sisesta käsk
+```bash
+ServerPasswordSet
+```
+Pärast uue parooli sisestamist on administraatori parool edukalt seadistatud.
+
+### Virtuaalse Hubi loomine
+
+Et teha võimalikuks Softetheri kasutamine peab esmalt looma virtuaalse Hubi käsuga. Antud juhul on hubi nimeks sisestatud VPN
+```bash
+HubCreate VPN
+```
+Hubi saab valida käsuga
+```bash
+Hub VPN
+```
+### SecureNAT seadistamine ning local bridge
+Softether hubidesse saab ühendada läbi SecureNAT või local bridge kaudu. Lubades ühenduse local bridge kaudu peab ka seadistama DHCP serveri ip aadresside määramiseks.
+
+Local bridge ja SecureNAT kasutamine korraga pole soovitatud.
+
+SecureNAT koosneb DHCP serveri ja VirtualNAT funktsioonidest.
+
+Vpncmd kaudu saame administraatorina aktiveerida SecureNAT-i käsuga
+```bash
+SecureNatEnable
+```
