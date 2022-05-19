@@ -55,7 +55,7 @@ cd ..
 mv vpnserver /usr/local
 cd /usr/local/vpnserver/
 ```
-Kausta kaitsmiseks muudame juurdepääsu õigusi
+Kausta kaitsmiseks muudame juurdepääsuõigusi
 ```bash
 chmod 600 *
 chmod 700 vpnserver
