@@ -10,7 +10,7 @@ pacman -Syu
 
 2.1 Alternatiiv meetod läbi lynx-i.
 
-Laeme lynx-i alla
+Laeme lynx-i paketi
 ```bash
 pacman -S lynx
 ```
