@@ -65,7 +65,7 @@ Loome teenuse käivitus faili
 ```bash
 nano /etc/init.d/vpnserver
 ```
-Sisestame faili antud teksti ning salvestame
+Sisestame faili antud tekstti ning salvestame
 ```bash
 #!/bin/sh
 # chkconfig: 2345 99 01
@@ -93,7 +93,7 @@ exit 1
 esac
 exit 0
 ```
-Loome antud kausta kui seda pole
+Loome antud kausta, kui seda pole
 ```bash
 mkdir /var/lock/subsys
 ```
@@ -101,11 +101,11 @@ Muudame juurdepääsuõigusi ning käivitame teenuse
 ```bash
 chmod 755 /etc/init.d/vpnserver && /etc/init.d/vpnserver start
 ```
-Kontrollime kas teenus käivitus
+Kontrollime, kas teenus käivitus
 ```bash
 sudo systemctl status vpnserver
 ```
-Kontrollime kas VPN server on töökorras
+Kontrollime, kas VPN server on töökorras
 ```bash
 cd /usr/local/vpnserver
 ./vpncmd
@@ -114,7 +114,7 @@ Peale viimase käsu sisestamist avaneb Softether seadistamise käsurida.
 
 Vali nr. 3 ning vajuta ENTER.
 
-Kirjuta terminali
+Kirjuta antud käsk terminali
 ```bash
 check
 ```
